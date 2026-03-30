@@ -21,6 +21,14 @@ services:
     depends_on:
     - redis
   
+  shipping:
+    build: ./shipping
+    image: sravankumar152/shipping:1.0.0
+    container_port: shipping
+    depends_on:
+    - cart
+    - mysql
+  
   frontend:
     build: ./FrontEnd
     image: sravankumar152/frontend:1.0.0
