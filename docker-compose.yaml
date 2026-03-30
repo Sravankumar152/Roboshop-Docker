@@ -23,7 +23,7 @@ services:
   
   frontend:
     build: ./FrontEnd
-    image: sravankumar12/frontend:1.0.0
+    image: sravankumar152/frontend:1.0.0
     container_name: frontend
     depends_on:
     - catalogue
