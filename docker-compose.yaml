@@ -58,6 +58,8 @@ services:
     - user
     - cart
     - shipping
+    - payment
+
   
   mongodb:
     build: ./MongoDB
