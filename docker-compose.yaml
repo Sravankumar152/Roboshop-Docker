@@ -52,6 +52,12 @@ services:
     build: ./Mysql
     image: sravankumar152/mysql:1.0.0
     container_name: mysql
+  rabbitmq:
+    image: rabbitmq:3
+    environment:
+    - RABBITMQ_DEFAULT_USER: roboshop
+    - RABBITMQ_DEFAULT_PASS: roboshop123
+    container_name: rabbitmq
   
 networks:
   default:
